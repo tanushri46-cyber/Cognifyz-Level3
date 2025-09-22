@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Gallery + CSS Slideshow</title>
+  <link rel="stylesheet" href="Task5.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow" aria-label="Image slideshow">
+      <div class="slide" style="background-image:url('https://picsum.photos/id/1018/1600/900');">
+        <div class="caption">
+          <h2>Autumn by the lake</h2>
+          <p>Golden autumn trees reflecting on a calm lake surface, creating a peaceful and scenic landscape perfect for nature lovers.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image:url('https://picsum.photos/id/1025/1600/900');">
+        <div class="caption">
+          <h2>Mountain panorama</h2>
+          <p>A wide panoramic view of majestic mountains, clear skies, and pure wilderness that inspires adventure and exploration.</p>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image:url('https://picsum.photos/id/1039/1600/900');">
+        <div class="caption">
+          <h2>City dusk</h2>
+          <p>The city skyline glowing with warm lights at dusk, blending modern architecture with the soft beauty of the evening sky.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery-card">
+      <div class="gallery-title">
+        <h3>Thumbnail Gallery — Click to enlarge</h3>
+        <div style="font-size:13px;color:#bfe9f2;opacity:.95">Pure HTML/CSS lightbox</div>
+      </div>
+
+      <div class="thumb-grid" role="list">
+        <a class="thumb" href="#img1" role="listitem" aria-label="Open image 1" data-caption="Golden autumn trees reflecting on a calm lake">
+          <img src="https://picsum.photos/id/1018/600/400" alt="Scenic autumn landscape with golden trees by a calm lake reflecting the colors of fall">
+        </a>
+
+        <a class="thumb" href="#img2" role="listitem" aria-label="Open image 2" data-caption="Close-up dog portrait with mountains in the background">
+          <img src="https://picsum.photos/id/1025/600/400" alt="Close-up portrait of a dog with mountains and blue sky in the background">
+        </a>
+
+        <a class="thumb" href="#img3" role="listitem" aria-label="Open image 3" data-caption="Modern city skyline glowing at dusk">
+          <img src="https://picsum.photos/id/1039/600/400" alt="Modern city skyline at dusk with glowing lights and orange-tinted sky">
+        </a>
+
+        <a class="thumb" href="#img4" role="listitem" aria-label="Open image 4" data-caption="Foggy forest with tall pine trees">
+          <img src="https://picsum.photos/id/1043/600/400" alt="Foggy forest with tall pine trees creating a mysterious atmosphere">
+        </a>
+
+        <a class="thumb" href="#img5" role="listitem" aria-label="Open image 5" data-caption="Rolling green hills under a cloudy sky">
+          <img src="https://picsum.photos/id/1050/600/400" alt="Wide view of rolling green hills under a partly cloudy sky">
+        </a>
+
+        <a class="thumb" href="#img6" role="listitem" aria-label="Open image 6" data-caption="Sunny beach with waves and sandy shore">
+          <img src="https://picsum.photos/id/1062/600/400" alt="Sunny beach scene with waves, sandy shore, and a bright horizon">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="img1" aria-hidden="false">
+    <a href="#" class="close-btn" aria-label="Close">✕</a>
+    <div class="box"><img src="https://picsum.photos/id/1018/1400/900" alt="Scenic autumn view with golden trees reflecting on a calm lake under a clear sky"></div>
+  </div>
+
+  <div class="lightbox" id="img2">
+    <a href="#" class="close-btn" aria-label="Close">✕</a>
+    <div class="box"><img src="https://picsum.photos/id/1025/1400/900" alt="Close-up of a friendly dog with mountain peaks and blue sky in the background"></div>
+  </div>
+
+  <div class="lightbox" id="img3">
+    <a href="#" class="close-btn" aria-label="Close">✕</a>
+    <div class="box"><img src="https://picsum.photos/id/1039/1400/900" alt="City skyline at dusk with glowing lights reflecting against the orange and purple evening sky"></div>
+  </div>
+
+  <div class="lightbox" id="img4">
+    <a href="#" class="close-btn" aria-label="Close">✕</a>
+    <div class="box"><img src="https://picsum.photos/id/1043/1400/900" alt="Foggy forest scene with tall pine trees fading into the mist"></div>
+  </div>
+
+  <div class="lightbox" id="img5">
+    <a href="#" class="close-btn" aria-label="Close">✕</a>
+    <div class="box"><img src="https://picsum.photos/id/1050/1400/900" alt="Beautiful rolling green hills stretching into the distance under a partly cloudy sky"></div>
+  </div>
+
+  <div class="lightbox" id="img6">
+    <a href="#" class="close-btn" aria-label="Close">✕</a>
+    <div class="box"><img src="https://picsum.photos/id/1062/1400/900" alt="Peaceful sunny beach scene with blue ocean waves, golden sand, and bright horizon"></div>
+  </div>
+
+</body>
+</html>
